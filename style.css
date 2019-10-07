@@ -869,6 +869,8 @@ header {
   background-repeat: no-repeat;
   border-top: 1px solid #ed7722;
   padding-bottom: 2rem; }
+  #community .wrapper {
+    overflow: hidden; }
   #community h3 {
     font-weight: 400;
     text-transform: uppercase;
