@@ -32,26 +32,31 @@
   }
 
   .stat-members.triggered{
-    transform: translate(-50vw, 0);
+    transform: translate(50vw, 0);
   }
 
   .stat-courses{
     color: $gray-light;
     font-size: 1.8rem;
+    right: -100vw;
+    transition-delay: 0.5s;
   }
 
   .stat-courses.triggered{
-    transition-delay: 0.5s;
+    transform: translate(-100vw, 0);
   }
 
   .stat-fellows{
     color: $gray-med;
     font-size: 1.8rem;
     padding-left: 8rem;
+    right: 50vw;
+    transition-delay: 1s;
+    right: 50vw;
   }
 
   .stat-fellows.triggered{
-    transition-delay: 1s;
+    transform: translate(50vw, 0);
   }
 
   .stat-convo{
@@ -62,10 +67,12 @@
     font-size: 2.5rem;
     font-style: italic;
     font-weight: 100;
+    transition-delay: 1.5s;
+    right: -100vw;
   }
 
   .stat-convo.triggered{
-    transition-delay: 1.5s;
+    transform: translate(-100vw, 0);
   }
 
   .button-bold{

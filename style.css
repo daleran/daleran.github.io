@@ -852,7 +852,8 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out;
+    transition-delay: 0.5s; }
   #digital img.triggered {
     transform: translate(0, -100vh); }
   #digital .button-bold {
@@ -886,18 +887,23 @@ header {
     padding-left: 4rem;
     right: 50vw; }
   #community .stat-members.triggered {
-    transform: translate(-50vw, 0); }
+    transform: translate(50vw, 0); }
   #community .stat-courses {
     color: #bbbbbb;
-    font-size: 1.8rem; }
-  #community .stat-courses.triggered {
+    font-size: 1.8rem;
+    right: -100vw;
     transition-delay: 0.5s; }
+  #community .stat-courses.triggered {
+    transform: translate(-100vw, 0); }
   #community .stat-fellows {
     color: #555555;
     font-size: 1.8rem;
-    padding-left: 8rem; }
+    padding-left: 8rem;
+    right: 50vw;
+    transition-delay: 1s;
+    right: 50vw; }
   #community .stat-fellows.triggered {
-    transition-delay: 1s; }
+    transform: translate(50vw, 0); }
   #community .stat-convo {
     color: #f3a46b;
     font-family: "Prata", serif;
@@ -905,9 +911,11 @@ header {
     padding-left: 2rem;
     font-size: 2.5rem;
     font-style: italic;
-    font-weight: 100; }
+    font-weight: 100;
+    transition-delay: 1.5s;
+    right: -100vw; }
   #community .stat-convo.triggered {
-    transition-delay: 1.5s; }
+    transform: translate(-100vw, 0); }
   #community .button-bold {
     margin: 1rem;
     display: block;
