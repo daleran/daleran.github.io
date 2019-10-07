@@ -1,0 +1,9 @@
+footer{
+  background-color: $gray-dark;
+  color: $text-light;
+
+  .button-bold{
+    margin: 2rem;
+    @include center-block;
+  }
+}

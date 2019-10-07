@@ -1,1 +1,0 @@
-"use strict";$(document).ready(function(){$("a").on("click",function(t){if(""!==this.hash){t.preventDefault();var o=this.hash;$("html, body").animate({scrollTop:$(o).offset().top},800,function(){window.location.hash=o})}})});

@@ -1,0 +1,116 @@
+#courses{
+  .line{
+    width: 15vw;
+  }
+
+  .course{
+    display: flex;
+    margin: 1rem;
+    background-color: $gray-med;
+    color: $text-light;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: no-wrap;
+    
+    figure{
+      flex: 1 0 16rem;
+      margin: 0;
+      background-image: url('img/courses/1-Course-Image-Principles-of-WOF.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .course-text{
+      flex-grow: 1;
+      padding: 2rem 2rem 3rem 2rem;
+      h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family: $font-serif;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h4{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 0.2rem;
+        font-family: $font-sans;
+        margin-top: 0.5rem;
+      }
+
+      p{
+        margin-bottom: 0;
+      }
+
+      img{
+        display: inline-block;
+        position: relative;
+        top: 1.5rem;
+      }
+      
+      span{
+        display: inline-block;
+      }
+    }
+  }
+
+  .button{
+    @include center-block;
+    position: relative;
+    bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: $tiny-break){
+  #courses{
+    .course{
+      .course-text{
+        h4{
+          margin-left: 2rem;
+        }
+  
+        p{
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $small-break){
+  #courses{
+    .course{
+      flex-direction: row;
+
+      figure{
+        flex: 1 0 16rem;
+      }
+
+      .course-text{
+        h4{
+          margin-left: 4rem;
+        }
+  
+        p{
+          margin-left: 4rem;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: $medium-break){
+  #courses{
+    .course{
+      figure{
+        flex-basis: 24rem;
+      }
+    }
+  }
+}
+
+
+

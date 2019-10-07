@@ -1,0 +1,31 @@
+/*!
+Theme Name: WOFI Landing Theme
+Author: Sean Davis
+Description: Landing Page Template for WOFI
+Version: 1.0.0
+License: Proprietary
+Text Domain: wofi-landing
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+@import 'modules/_normalize';
+
+@import 'modules/mixins';
+@import 'modules/variables';
+@import 'modules/controls';
+@import 'modules/effects';
+@import 'modules/typography';
+@import 'modules/base';
+
+@import 'sections/navbar';
+@import 'sections/header';
+@import 'sections/about';
+@import 'sections/courses';
+@import 'sections/journal';
+@import 'sections/podcasts';
+@import 'sections/fellows';
+@import 'sections/digital';
+@import 'sections/community';
+@import 'sections/features';
+@import 'sections/faq';
+@import 'sections/footer';
+

@@ -1,0 +1,16 @@
+nav {
+  background: #FFF;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: sticky;
+  top: 0;
+}
+
+nav.sticky {
+  position: fixed;
+}
+
+nav ul li.active {
+  background: #ff6e6f;
+}

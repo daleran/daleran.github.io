@@ -1,0 +1,121 @@
+#fellows{
+  position: relative;
+
+  .line {
+    width: 50vw;
+  }
+
+  .fellow-container{
+    margin: 1rem 0;
+    position: relative;
+
+  }
+
+  .slick-dots{
+    bottom: -1rem;
+  }
+
+  .slick-prev, .slick-next{
+    width: 2rem;
+    height: 2rem;
+    z-index: 2;
+    top: 40%;
+    transform: translate(0, -60%);
+  }
+
+  .slick-prev:before, .slick-next:before{
+    font-family: $font-sans;
+    font-weight: bold;
+    font-size: 3rem;
+    color: $primary;
+  }
+
+  .slick-prev
+  {
+      left: 0rem;
+  }
+  [dir='rtl'] .slick-prev
+  {
+      right: 0rem;
+      left: auto;
+  }
+  .slick-prev:before
+  {
+      content: '<';
+  }
+  [dir='rtl'] .slick-prev:before
+  {
+      content: '>';
+  }
+
+  .slick-next
+  {
+      right: 0rem;
+  }
+  [dir='rtl'] .slick-next
+  {
+      right: auto;
+      left: 0rem;
+  }
+  .slick-next:before
+  {
+      content: '>';
+  }
+  [dir='rtl'] .slick-next:before
+  {
+      content: '<';
+  }
+
+  .slick-prev.slick-disabled:before,
+  .slick-next.slick-disabled:before
+  {
+      opacity: 0;
+  }
+
+  .button-bold{
+    margin: 2rem;
+    @include center-block;
+  }
+}
+
+.fellow{
+  position: relative;
+  max-width: 20rem;
+  // border: 1px solid $primary;
+  margin: 2rem 2rem;
+  padding: 1rem;
+
+  .fellow-line{
+    position: absolute;
+    border-top: 0.25rem solid $primary;
+    width: 30%;
+    top: 10%;
+    left: -7.5%;
+  }
+
+  figure{
+    width: 100%;
+    margin: 0;
+    img{
+      width: 100%;
+      height: auto;
+    }    
+  }
+
+  h3{
+    font-size: 1rem;
+    font-family: serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    padding: 0 0.5rem 0 2rem;
+    margin-right: -4rem;
+  }
+
+  p{
+    padding: 0 0.5rem 0 4rem;
+    margin-right: -4rem;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}

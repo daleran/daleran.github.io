@@ -1,0 +1,104 @@
+#journal {
+  .line {
+    width: 30vw;
+  }
+
+  img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .journal-main {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+
+    .journal-l {
+      //background-image: url('img/features/journal-spread.png');
+      //background-position: left;
+      //background-repeat: no-repeat;
+      //background-size: contain;
+      position: relative;
+      min-height: 24rem;
+      img{
+        margin-right: auto;
+      }
+    }
+
+    .journal-text {
+      @include center-block;
+      flex-shrink: 0;
+      min-width: 20rem;
+      margin: 0;
+      padding: 0 5vw;
+
+      @for $i from 1 through 12 {
+        p:nth-child(#{$i}) {
+          margin-left:$i * .5rem;
+        }
+      }
+
+      p {
+        @include font-size(0.75);
+        margin: 0.2rem 0.2rem;
+      }
+    }
+
+    .journal-r {
+      //background-image: url('img/features/journal.png');
+      //background-position: right;
+      //background-repeat: no-repeat;
+      //background-size: contain;
+      position: relative;
+      min-height: 24rem;
+      img{
+        margin-left: auto;
+      }
+    }
+  }
+
+  .button-bold {
+    @include center-block;
+    margin-top: 3rem;
+  }
+
+
+}
+
+@media (min-width: $mobile-break) {
+  #journal {
+
+    img{
+      position: relative;
+      z-index: -1;
+    }
+
+    .journal-main {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      
+      .journal-l{
+        flex-grow: 1;
+        margin-right: -8rem;
+      }
+
+      .journal-text {
+        padding: 0;
+        min-width: 26rem;
+        p {
+          @include font-size(1);
+        }
+      }
+
+      .journal-r{
+        flex-grow: 1;
+        margin-left: -8rem; 
+      }
+    }
+  }
+}
