@@ -3,13 +3,18 @@ html {
   font-family: $font-sans;
 }
 
+section{
+  background-color: #FFF;
+  padding: 1rem 0;
+}
+
 img {
   display: block;
 }
 
 .wrapper {
   margin: auto;
-  max-width: 64rem;
+  max-width: $wrapper-size;
 }
 
 .row {

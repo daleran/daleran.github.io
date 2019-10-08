@@ -6,70 +6,68 @@
   transform: scale(1.5); 
 }
 
-// Cards Carousel
-// ----------------------------------------------
-
-.carosel-3d {
-  position: relative;
-	width: 60vw;
-	height: 40vw;
-	max-width: 480px;
-	max-height: 350px;
-  margin: 0;
-  color: white;
-	perspective: 1000px;
-  transform-origin: center;
-
-	// This is the element that rotates with the animation
-
-	&__content {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-    transform-origin: center;
-		transform-style: preserve-3d;
-		transform: translateZ(-30vw) rotateY(0);
-		animation: carousel 10s infinite cubic-bezier(0.77, 0, 0.175, 1) forwards;
-    &.step-animation {
-      animation: carousel 8s infinite steps(1) forwards;
-    }
-	}
-
-	// Individual cards
-
-	&__item {
-		position: absolute;
-		top: 0;
-		left: 0;
-    right: 0;
-		width: 60vw;
-		height: 40vw;
-    max-width: 480px;
-    max-height: 350px;
-    transform-origin: center;
-
-		&:nth-child(1) {
-			background: transparent;
-			transform: rotateY(0) translateZ(50vw);
-		}
-
-		&:nth-child(2) {
-			background: transparent;
-			transform: rotateY(120deg) translateZ(50vw);
-		}
-
-		&:nth-child(3) {
-			background: transparent;
-			transform: rotateY(240deg) translateZ(50vw);
+.slideshow {
+	width: 20rem;
+	height: 15rem;
+	margin:0 auto;
+	overflow:hidden;
+	.container {
+		width:60rem; /* 300 x 4 */
+		position:relative;
+		animation:slide 8s ease-in-out infinite;
+		.item {
+			width:20rem;
+			height:15rem;
+			float:left;
 		}
 	}
 }
 
-// Carousel animation
+@keyframes slide {
+	0% {left:0;}
+	33% {left:-20rem;}
+	66% {left:-40rem;}
+	100% {left:0;}
+}
 
-@keyframes carousel {
-	0%,  17.5%  { transform: translateZ(-50vw) rotateY(0);}
-	27.5%, 45%  { transform: translateZ(-50vw) rotateY(-120deg);}
-	55%, 72.5%  { transform: translateZ(-50vw) rotateY(-240deg);}
-	82.5%, 100% { transform: translateZ(-50vw) rotateY(-360deg);}
+@media screen and (min-width: $small-break){
+	.slideshow {
+		width: 30rem;
+		height: 20rem;
+		.container {
+			width:90rem; /* 300 x 4 */
+			.item {
+				width:30rem;
+				height:20em;
+			}
+		}
+	}
+	
+	@keyframes slide {
+		0% {left:0;}
+		33% {left:-30rem;}
+		66% {left:-30rem;}
+		100% {left:0;}
+	}
+}
+
+@media screen and (min-width: $small-break){
+	.slideshow {
+		width: 50rem;
+		height: 30rem;
+		.container {
+			width:150rem; /* 300 x 4 */
+			.item {
+				width:50rem;
+				height:30rem;
+			}
+		}
+	}
+	
+	@keyframes slide {
+		0% {left:0;}
+		33% {left:-50rem;}
+		66% {left:-100rem;}
+		100% {left:0;}
+	}
 }

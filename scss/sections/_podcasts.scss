@@ -2,12 +2,7 @@
   background-image: url('img/bg/pod-1.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   color: $text-light;
-
-  .line {
-    width: 40vw;
-  }
 
   .pod-container{
     display:flex;

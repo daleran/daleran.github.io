@@ -1,9 +1,48 @@
 footer{
   background-color: $gray-dark;
   color: $text-light;
+  text-align: center;
+
+  .wrapper{
+    position: relative;
+    bottom: 4rem;
+  }
+
+  h3{
+    font-size: 2rem;
+    font-family: $font-serif-head;
+    font-style: italic;
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin: 1rem 1rem 0.25rem 1rem;
+  }
+
+  h4{
+    margin: 0.25rem 1rem 1rem 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+
+  img{
+    width: 2.5rem;
+    height: auto;
+    @include center-block;
+  }
+
+  .footer-text{
+    max-width: 48rem;
+    @include center-block;
+  }
+
+  p{
+    padding: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+  }
 
   .button-bold{
-    margin: 2rem;
+    margin: 1rem;
     @include center-block;
   }
 }

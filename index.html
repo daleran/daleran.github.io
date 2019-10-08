@@ -22,8 +22,7 @@
 
   <link rel="canonical" href="https://wordonfire.institute">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Prata|Muli:300,400,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=GFS+Didot|Prata|Muli:300,400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link href="style.css" rel="stylesheet" type="text/css">
@@ -44,6 +43,9 @@
 -->
   <!--Header-->
   <header id="home">
+    <video poster="img/bg/crowd-bg-still.png" id="bgvid" playsinline autoplay muted loop>
+      <source src="img/bg/crowd-bg.mp4" type="video/mp4">
+    </video>
     <div class="wrapper">
       <div class="logo">
         <img src="img/logos/WOF-Institute-Logo-Icon-Orange.png" alt="Word on Fire Logo">
@@ -65,7 +67,8 @@
     <!--About-->
     <section id="about">
       <div class="wrapper">
-        <h2>&ldquo;I formed the Word on Fire Institute to respond to what I think is the <br><span>greatest challenge of our time...</span>&rdquo;</h2>
+        <h2>&ldquo;I formed the Word on Fire Institute to respond to what I think is the <br><span>greatest challenge of
+            our time...</span>&rdquo;</h2>
         <figure class="video-box">
           <iframe
             src="https://player.vimeo.com/video/291098092?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0"
@@ -75,15 +78,15 @@
       <p>Take courses in theology, philosophy, evangelization, and culture from <br> Bishop Barron and the Word on Fire
         Institute Fellows <br> <strong>anytime, anywhere</strong>. </p>
       <div>
-        <figure class="devices carosel-3d">
-          <div class="carosel-3d__content">
-            <div class="carosel-3d__item">
+        <figure class="devices slideshow">
+          <div class="container">
+            <div class="item">
               <img src="img/features/phone.png" alt="Phone">
             </div>
-            <div class="carosel-3d__item">
+            <div class="item">
               <img src="img/features/laptop.png" alt="Laptop">
             </div>
-            <div class="carosel-3d__item">
+            <div class="item">
               <img src="img/features/ipad.png" alt="Ipad">
             </div>
           </div>
@@ -95,8 +98,9 @@
 
     <!--Courses-->
     <section id="courses">
+
       <div class="heading-line">
-        <div class="line"></div>
+        <span class="line-l"></span>
         <h2>Courses</h2>
       </div>
       <div class="wrapper">
@@ -117,7 +121,8 @@
             <h3>The 8 Principles</h3>
             <h4>of Word on Fire</h4>
             <p>Learn the animating principles of the Word on Fire movement and the guiding lights of the Word on Fire
-              Institute. These are the foundational pillars of our spirituality of evanfelization. Learn the animating principles of the Word on Fire movement and the guiding lights of the Word on Fire
+              Institute. These are the foundational pillars of our spirituality of evanfelization. Learn the animating
+              principles of the Word on Fire movement and the guiding lights of the Word on Fire
               Institute. These are the foundational pillars of our spirituality of evanfelization.</p>
             <img src="img/icons/icon-fellows-gray.png" alt="Fellow Icon" class="fellow-icon">
             <span>Jared Zimmerer</span>
@@ -172,41 +177,34 @@
     </section>
 
     <!--Journal-->
-    <section id="journal">
+    <section id="journal" class="anim-trigger">
       <div class="heading-line">
-        <div class="line"></div>
+        <span class="line-l"></span>
         <h2>The Journal</h2>
       </div>
-      <div class="journal-main">
-        <div class="journal-l">
-          <img src="img/features/journal-spread.png" alt="Journal Spread">
-        </div>
-        <div class="journal-text">
-          <p>Evangelization & Culture, the Journal of</p>
-          <p>the Word on Fire Institute, is published</p>
-          <p>quarterly and offered exclusively to Word</p>
-          <p>on Fire Institute Members. It exists to be</p>
-          <p>a tangible representation of the Word on</p>
-          <p>Fire Institute’s mission and goal: to lead</p>
-          <p>with beauty in order to bring others to the</p>
-          <p>knowledge of truth. It features academic</p>
-          <p>writing from premier theologians and</p>
-          <p>inspiring bits of literature, culture, and</p>
-          <p>daily life from fellow missionaries on the</p>
-          <p>journey to know and serve Christ. </p>
-          <a href="#" class="button-bold">Join Now</a>
-        </div>
-        <div class="journal-r">
-          <img src="img/features/journal.png" alt="Journal Cover">
-        </div>
+      <img class="journal-l anim-elem" src="img/features/journal-spread.png" alt="Journal Spread">
+      <img class="journal-r anim-elem" src="img/features/journal.png" alt="Journal Cover">
+      <div class="journal-text">
+        <p>Evangelization & Culture, the Journal of</p>
+        <p>the Word on Fire Institute, is published</p>
+        <p>quarterly and offered exclusively to Word</p>
+        <p>on Fire Institute Members. It exists to be</p>
+        <p>a tangible representation of the Word on</p>
+        <p>Fire Institute’s mission and goal: to lead</p>
+        <p>with beauty in order to bring others to the</p>
+        <p>knowledge of truth. It features academic</p>
+        <p>writing from premier theologians and</p>
+        <p>inspiring bits of literature, culture, and</p>
+        <p>daily life from fellow missionaries on the</p>
+        <p>journey to know and serve Christ. </p>
       </div>
-
+      <a href="#" class="button-bold">Join Now</a>
     </section>
 
     <!--Podcasts-->
     <section id="podcasts">
       <div class="heading-line">
-        <div class="line"></div>
+        <span class="line-l"></span>
         <h2>Podcasts</h2>
       </div>
       <div class="wrapper">
@@ -229,7 +227,7 @@
     <!--Fellows-->
     <section id="fellows">
       <div class="heading-line">
-        <div class="line"></div>
+        <span class="line-l"></span>
         <h2>Fellows</h2>
       </div>
       <div class="fellow-container">
@@ -275,7 +273,7 @@
     <!--Word on Fire Digitial-->
     <section id="digital" class="anim-trigger">
       <div class="heading-line">
-        <div class="line"></div>
+        <span class="line-l"></span>
         <h2>Word on Fire Digital</h2>
       </div>
       <div class="wrapper">
@@ -293,12 +291,13 @@
         <h3 class="stat-courses anim-elem">12+ Courses</h3>
         <h3 class="stat-fellows anim-elem">14+ Fellows</h3>
         <h3 class="stat-convo anim-elem">Thousands of Conversations</h3>
-        <p class="community-text">Our <strong>Online Community</strong> is full of theological and practical threads that discuss the content
+        <p class="community-text">Our <strong>Online Community</strong> is full of theological and practical threads
+          that discuss the content
           and concepts offered within each <strong>Word on Fire Institute Course</strong>. But, the forums are also
           filled with the
           musings and prayers of other incredible people on the same mission—to encounter Christ and to share that
-          encounter with the world. 
-        </p>  
+          encounter with the world.
+        </p>
       </div>
       <a href="#" class="button-bold">Join Now</a>
     </section>
@@ -324,20 +323,44 @@
 
     <!--FAQs-->
     <section id="faqs">
-      <h3>FAQs</h3>
+      <img src="img/logos/WOF-Institute-Logo-woth white text.png" alt="Word on Fire Logo">
+      <div class="headline-center">
+        <span></span>
+        <h3>FAQs</h3>
+        <span></span>
+      </div>
       <div class="wrapper">
+        <ul>
+          <li>
+            <p class="question">Q: What is the purpose of this sample question?</p>
+            <p class="answer">A: The purpose of this sample question is to demonstrate how the styling of the of the FAQ
+              format.</p>
+          </li>
+          <li>
+            <p class="question">Q: What is the purpose of this sample question?</p>
+            <p class="answer">A: The purpose of this sample question is to demonstrate how the styling of the of the FAQ
+              format.</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
   <!--Footer-->
   <footer>
-    <h3>Enrollment is now open!</h3>
-    <h4>Get Started Today...</h4>
-    <p>Your $27/month membership supports this new and exciting evangelistic initiative and will also help Word on Fire
-      Catholic Ministries, a registered 501(c)(3) non-profit organization, continue to produce and distribute
-      high-quality Catholic films, conferences, and resources bringing Christ to the culture.</p>
-    <a href="#" class="button-bold">Join Now</a>
+    <div class="wrapper">
+      <img src="img/logos/WOF-Institute-Logo-Icon-Orange.png" alt="Word on Fire Logo">
+      <h3>Enrollment is now open!</h3>
+      <h4>Get Started Today...</h4>
+      <div class="footer-text">
+        <p>Your $27/month membership supports this new and exciting evangelistic initiative and will also help Word on
+          Fire
+          Catholic Ministries, a registered 501(c)(3) non-profit organization, continue to produce and distribute
+          high-quality Catholic films, conferences, and resources bringing Christ to the culture.</p>
+      </div>
+      <a href="#" class="button-bold">Join Now</a>
+      <a href="#home" class="button">Back to Top</a>
+    </div>
   </footer>
 
   <!--Scripts-->

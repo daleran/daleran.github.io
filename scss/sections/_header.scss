@@ -1,14 +1,22 @@
 header{
   min-height: 100vh;
   width: 100%;
-  background-image: url('img/bg/mock-video-back.png');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 2rem;
+
+  video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -10;
+    transform: translateX(-50%) translateY(-50%);
+}
 
   .logo{
     img{
@@ -40,16 +48,17 @@ header{
       color: $text-light;
       margin: 1rem;
     }
+  }
 
-    em{
-      font-family: $font-serif;
-    }
+  .button-bold{
+    min-width: 11rem;
   }
 }
 
 
 @media screen and (min-width: $small-break){
   header{ 
+    padding-top: 6rem;
     .logo{
       margin-bottom: 6rem;
       .page-title{

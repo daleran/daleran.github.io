@@ -1,16 +1,12 @@
 #digital{
   background-image: url('img/bg/digital-bg.png');
-  background-size: auto 60%;
-  background-position: top;
-  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: center;
   color: $text-light;
-
-  .line {
-    width: 40vw;
-  }
 
   .wrapper{
     position: relative;
+    overflow: hidden;
   }
 
   p{
