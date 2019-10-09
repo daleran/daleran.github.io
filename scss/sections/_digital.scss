@@ -4,7 +4,19 @@
   background-position: center;
   color: $text-light;
 
-  .wrapper{
+  .heading-line {
+    .line-l {
+      flex: 0 0 0;
+    }
+
+    h2{
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+    }
+  }
+
+
+  .container{
     position: relative;
     overflow: hidden;
   }
@@ -39,7 +51,21 @@
   }
 
   .button-bold{
-    margin: 1rem;
     @include center-block;
+  }
+}
+
+@media (min-width: $small-break) {
+  #digital{
+    .heading-line {
+      .line-l {
+        flex: 1 0 auto;
+      }
+  
+      h2{
+        flex: 0 1 auto;
+        font-size: 1.75rem;
+      }
+    }
   }
 }

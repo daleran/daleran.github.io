@@ -1,12 +1,12 @@
-header{
+header {
   min-height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 0;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 0;
 
-  video { 
+  video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -16,16 +16,33 @@ header{
     height: auto;
     z-index: -10;
     transform: translateX(-50%) translateY(-50%);
-}
+  }
 
-  .logo{
-    img{
+  .login{
+    color: $text-light;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 1rem;
+    text-transform: uppercase;
+    a{
+      text-decoration: none;
+      color: $text-light;
+
+      &:hover{
+        color:$primary;
+      }
+    }
+  }
+
+  .logo {
+    img {
       @include center-block;
       height: auto;
       width: 2rem;
     }
 
-    .page-title{
+    .page-title {
       font-size: 1.25rem;
       text-transform: uppercase;
       font-weight: 100;
@@ -36,12 +53,12 @@ header{
     }
   }
 
-  .title-block{
+  .title-block {
     display: block;
     padding: 1rem;
     margin: 1rem;
 
-    .page-subtitle{
+    .page-subtitle {
       font-family: $font-sans;
       font-weight: 400;
       font-size: 2rem;
@@ -50,23 +67,29 @@ header{
     }
   }
 
-  .button-bold{
+  .button-bold {
     min-width: 11rem;
   }
 }
 
 
-@media screen and (min-width: $small-break){
-  header{ 
-    padding-top: 6rem;
-    .logo{
+@media screen and (min-width: $small-break) {
+  header {
+
+    .login{
+      padding: 3rem;
+    }
+
+    .logo {
       margin-bottom: 6rem;
-      .page-title{
+
+      .page-title {
         font-size: 1.25rem;
       }
     }
-    .title-block{
-      .page-subtitle{
+
+    .title-block {
+      .page-subtitle {
         font-size: 3rem;
       }
     }

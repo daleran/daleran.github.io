@@ -1,4 +1,3 @@
-
 $(function () {
   let courses = $('.course');
   courses.slice(3,courses.length+1).hide();

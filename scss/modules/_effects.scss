@@ -11,10 +11,10 @@
 	height: 15rem;
 	margin:0 auto;
 	overflow:hidden;
-	.container {
+	.slide-view {
 		width:60rem; /* 300 x 4 */
 		position:relative;
-		animation:slide 8s ease-in-out infinite;
+		animation:slide 16s ease-in-out infinite;
 		.item {
 			width:20rem;
 			height:15rem;
@@ -30,12 +30,12 @@
 	100% {left:0;}
 }
 
-@media screen and (min-width: $small-break){
+@media only screen and (min-width: $small-break){
 	.slideshow {
 		width: 30rem;
 		height: 20rem;
-		.container {
-			width:90rem; /* 300 x 4 */
+		.slide-view {
+			width:90rem; 
 			.item {
 				width:30rem;
 				height:20em;
@@ -51,12 +51,12 @@
 	}
 }
 
-@media screen and (min-width: $small-break){
+@media only screen and (min-width: $medium-break){
 	.slideshow {
 		width: 50rem;
 		height: 30rem;
-		.container {
-			width:150rem; /* 300 x 4 */
+		.slide-view {
+			width:150rem; 
 			.item {
 				width:50rem;
 				height:30rem;

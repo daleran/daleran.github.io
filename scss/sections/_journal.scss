@@ -1,41 +1,52 @@
 #journal {
-  .heading-line{
-    position: relative;
-    z-index: 5;
-
-    .line {
-      width: 30vw;
-    }
-  }
   position: relative;
   overflow: hidden;
 
-  img{
+  .l-margin {
+    position: relative;
+    z-index: 5;
+  }
+
+  
+  .heading-line {
+    position: relative;
+    z-index: 5;
+    .line-l {
+      flex: 0 0;
+      width: 0;
+    }
+
+    h2{
+      flex: 0 0 auto;
+    }
+  }
+
+  img {
     position: absolute;
     width: 24rem;
     height: auto;
     z-index: 1;
-    transition: all 1s ease-out; 
+    transition: all 1s ease-out;
     transition-delay: 0.5s;
   }
 
-  .journal-l{
+  .journal-l {
     top: 4rem;
     right: 50%;
     transform: translateX(-100vw);
   }
 
-  .journal-l.triggered{
+  .journal-l.triggered {
     transform: translateX(50%);
   }
 
-  .journal-r{
+  .journal-r {
     bottom: 4rem;
     left: 50%;
     transform: translateX(100vw);
   }
 
-  .journal-r.triggered{
+  .journal-r.triggered {
     transform: translateX(-50%);
   }
 
@@ -46,7 +57,7 @@
     margin: 20rem auto 20rem auto;
     position: relative;
     z-index: 5;
-       
+
     p {
       margin: 0.2rem 0.2rem;
     }
@@ -64,13 +75,22 @@
 
 @media (min-width: $small-break) {
   #journal {
+    .heading-line {
+      .line-l {
+        flex: 0 1 25%;
+      }
+  
+      h2{
+        flex: 1 0 auto;
+      }
+    }
 
     .journal-text {
       padding: 0;
 
       @for $i from 1 through 12 {
         p:nth-child(#{$i}) {
-          margin-left:$i * .5rem;
+          margin-left: $i * .5rem;
         }
       }
     }
@@ -79,31 +99,31 @@
 
 @media (min-width: $medium-break) {
   #journal {
-    img{
+    img {
       width: auto;
       height: 42rem;
     }
-  
-    .journal-l{
-      top:0;
-      left:25%;
+
+    .journal-l {
+      top: 0;
+      left: 25%;
       transform: translateX(-100vw);
     }
-  
-    .journal-l.triggered{
+
+    .journal-l.triggered {
       transform: translate(-75%);
     }
-  
-    .journal-r{
+
+    .journal-r {
       top: -4rem;
       left: 72%;
       transform: translateX(100vw);
     }
-  
-    .journal-r.triggered{
+
+    .journal-r.triggered {
       transform: translate(-28%, 0);
     }
-  
+
     .journal-text {
       margin: 6rem auto 2rem auto;
     }

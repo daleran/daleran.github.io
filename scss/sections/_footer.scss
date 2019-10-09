@@ -3,7 +3,7 @@ footer{
   color: $text-light;
   text-align: center;
 
-  .wrapper{
+  .container{
     position: relative;
     bottom: 4rem;
   }
@@ -42,7 +42,7 @@ footer{
   }
 
   .button-bold{
-    margin: 1rem;
-    @include center-block;
+    display: block;
+    margin: 1rem auto 1rem auto;
   }
 }

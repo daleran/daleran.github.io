@@ -16,7 +16,6 @@ $(window).on('resize scroll', function() {
   var now = new Date().getTime();
 
   function processScroll() {
-      console.log(new Date().getTime().toString());
       $('.anim-trigger').each(function() {
         const thisElem = $(this);
         if (thisElem.isInViewport()) {

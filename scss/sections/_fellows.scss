@@ -1,72 +1,40 @@
 #fellows{
   position: relative;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  .heading-line {
+    .line-l {
+      flex: 0 0;
+      width: 0;
+    }
+
+    h2{
+      flex: 0 0 auto;
+    }
+  }
 
   .fellow-container{
-    margin: 1rem 0;
-    position: relative;
-
+    margin: 0;
+    padding: 1rem;
   }
 
-  .slick-dots{
-    bottom: -1rem;
-  }
-
-  .slick-prev, .slick-next{
-    width: 2rem;
-    height: 2rem;
-    z-index: 2;
-    top: 40%;
-    transform: translate(0, -60%);
-  }
-
-  .slick-prev:before, .slick-next:before{
-    font-family: $font-sans;
-    font-weight: bold;
-    font-size: 3rem;
-    color: $primary;
-  }
-
-  .slick-prev
-  {
-      left: 0rem;
-  }
-  [dir='rtl'] .slick-prev
-  {
-      right: 0rem;
-      left: auto;
-  }
-  .slick-prev:before
-  {
-      content: '<';
-  }
-  [dir='rtl'] .slick-prev:before
-  {
-      content: '>';
-  }
-
-  .slick-next
-  {
-      right: 0rem;
-  }
-  [dir='rtl'] .slick-next
-  {
-      right: auto;
-      left: 0rem;
-  }
-  .slick-next:before
-  {
-      content: '>';
-  }
-  [dir='rtl'] .slick-next:before
-  {
-      content: '<';
-  }
-
-  .slick-prev.slick-disabled:before,
-  .slick-next.slick-disabled:before
-  {
-      opacity: 0;
-  }
+  /* no circle */
+.flickity-button {
+  background: transparent;
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: $primary;
+}
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
 
   .button-bold{
     margin: 2rem;
@@ -76,8 +44,8 @@
 
 .fellow{
   position: relative;
-  max-width: 20rem;
-  // border: 1px solid $primary;
+  width: 80%;
+  height: auto;
   margin: 2rem 2rem;
   padding: 1rem;
 
@@ -113,5 +81,23 @@
     margin-right: -4rem;
     font-size: 0.8rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (min-width: $small-break) {
+  #fellows{
+    .heading-line {
+      .line-l {
+        flex: 0 1 60%;
+      }
+  
+      h2{
+        flex: 1 0 auto;
+      }
+    }
+  }
+
+  .fellow {
+    width: 30%;
   }
 }

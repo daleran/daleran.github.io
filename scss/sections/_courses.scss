@@ -1,4 +1,16 @@
 #courses{
+
+  .heading-line {
+    .line-l {
+      flex: 0 0;
+      width: 0;
+    }
+
+    h2{
+      flex: 0 0 auto;
+    }
+  }
+
   .course{
     display: flex;
     margin: 1rem;

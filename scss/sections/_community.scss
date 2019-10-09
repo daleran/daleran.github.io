@@ -3,11 +3,12 @@
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  border-top: 1px solid $primary;
-  padding-bottom: 2rem;
+  border-top: 0.125rem solid $primary;
+  padding: 0;
+  overflow: hidden;
 
-  .wrapper{
-    overflow: hidden;
+  .container{
+    padding: 1rem 0 2rem 0;
   }
 
   h3{
@@ -21,12 +22,6 @@
     strong{
       font-weight: bold;
     }
-  }
-
-  p{
-    padding-left: 4rem;
-    margin: 1rem;
-    max-width: 36rem;
   }
 
   .stat-members{
@@ -66,8 +61,7 @@
   .stat-convo{
     color: $primary-light;
     text-transform: unset;
-    padding-left: 2rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-style: italic;
     font-weight: 100;
     transition-delay: 1.5s;
@@ -78,6 +72,11 @@
     transform: translate(-100vw, 0);
   }
 
+  p{
+    margin: 1rem;
+    max-width: 36rem;
+  }
+
   .button-bold{
     margin: 1rem;
     @include center-block;
@@ -86,6 +85,27 @@
 
 @media screen and (min-width: $small-break){
   #community{
-    background-image: url('img/bg/woman-computer.png');
+    background-image: url('img/bg/woman-computer.jpg');
+    .container{
+      background-color: rgba(255,255,255,0.5)
+    }
+
+    p{
+      padding-left: 4rem;
+      margin: 1rem;
+    }
+
+    .stat-convo{
+      padding-left: 2rem;
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (min-width: $medium-break){
+  #community{
+    .container{
+      background-color:transparent;
+    }
   }
 }

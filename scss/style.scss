@@ -7,10 +7,13 @@ License: Proprietary
 Text Domain: wofi-landing
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
-@import 'modules/_normalize';
+@import 'modules/normalize';
 
 @import 'modules/mixins';
 @import 'modules/variables';
+
+@import 'vendor/flickity';
+
 @import 'modules/controls';
 @import 'modules/effects';
 @import 'modules/typography';

@@ -1,4 +1,5 @@
 #features{
+  padding: 0 0 1rem 0;
   .feature-headings{
     background-color: $primary;
     color: $text-light;
@@ -35,12 +36,11 @@
   }
   
   ul{
-    margin: 1rem;
     max-width: 24rem;
     list-style: none;
     @include center-block;
     text-align: center;
-    padding: 0;
+    padding: 1rem;
 
     li{
       padding: 1rem;
@@ -55,7 +55,6 @@
   }
 
   .button-bold{
-    margin: 2rem;
     @include center-block;
   }
 }
