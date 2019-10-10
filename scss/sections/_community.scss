@@ -59,11 +59,10 @@
   }
 
   .stat-convo{
-    color: $primary-light;
+    color: $primary;
+    font-family: linotype-didot, serif;
     text-transform: unset;
     font-size: 2rem;
-    font-style: italic;
-    font-weight: 100;
     transition-delay: 1.5s;
     right: -100vw;
   }

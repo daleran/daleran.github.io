@@ -4585,9 +4585,18 @@ return Flickity;
 }));
 
 $('.fellow-container').flickity({
-  // options
-  cellAlign: 'center',
-  contain: true,
-  groupCells: true,
+  groupCells: '100%',
+  lazyLoad: true,
+  cellAlign: 'left',
+  adaptiveHeight: true,
+});
+
+$('.devices').flickity({
+  draggable: false,
+  prevNextButtons: false,
+  pageDots: false,
+  wrapAround: true,
+  autoPlay: 3000,
+  pauseAutoPlayOnHover: false,
 });
 
