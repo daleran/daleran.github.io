@@ -4584,10 +4584,13 @@ return Flickity;
 
 }));
 
+$( document ).ready()
+
 $('.fellow-container').flickity({
   groupCells: '100%',
   lazyLoad: true,
   cellAlign: 'left',
+  imagesLoaded: true,
   adaptiveHeight: true,
 });
 
@@ -4597,6 +4600,7 @@ $('.devices').flickity({
   pageDots: false,
   wrapAround: true,
   autoPlay: 3000,
+  imagesLoaded: true,
   pauseAutoPlayOnHover: false,
 });
 
