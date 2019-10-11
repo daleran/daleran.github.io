@@ -5,6 +5,8 @@ header {
   margin: 0;
   text-align: center;
   padding-top: 0;
+  position: relative;  
+  
 
   video {
     position: fixed;
@@ -54,16 +56,14 @@ header {
   }
 
   .title-block {
-    display: block;
-    padding: 1rem;
-    margin: 1rem;
+    @include center-block;
+    width: 80%;
 
     .page-subtitle {
       font-family: $font-sans;
       font-weight: 400;
       font-size: 2rem;
       color: $text-light;
-      margin: 1rem;
     }
   }
 
@@ -89,6 +89,7 @@ header {
     }
 
     .title-block {
+      @include center-all;
       .page-subtitle {
         font-size: 3rem;
       }

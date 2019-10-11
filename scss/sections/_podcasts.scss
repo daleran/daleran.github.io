@@ -42,14 +42,14 @@
   }
 }
 
-@media only screen and(min-width: $small-break) {
+@media only screen and (min-width: $small-break) {
   #podcasts {
     background-size: cover;
     background-position: center;
 
     .heading-line {
       .line-l {
-        flex: 0 1 40%
+        flex: 0 1 42%
       }
   
       h2{
@@ -66,6 +66,16 @@
       margin: 15vh 1rem 20vh 72%;
       max-width: 20rem;
       background-color: transparent;
+    }
+  }
+}
+
+@media only screen and (min-width: $large-break) {
+  #podcasts {
+
+
+    .pod-text{
+      margin: 25vh 1rem 25vh 72%;
     }
   }
 }

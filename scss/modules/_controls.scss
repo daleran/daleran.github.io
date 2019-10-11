@@ -2,14 +2,14 @@
   border: 2px solid $primary;
   background-color: #FFF;
   color: $text-dark;
-  padding: 1rem 0.6rem 1rem 0.6rem;
+  padding: 1rem;
   display: inline-block;
   @include font-size(1.2);
   text-decoration: none;
   text-transform: uppercase;
   margin: 0.5rem;
   max-width: 13rem;
-  font-family: $font-sans;
+  font-family: $font-sans-cond;
   letter-spacing: .1rem;
   text-align: center;
 
