@@ -23,6 +23,12 @@ $(window).on('resize scroll', function() {
           thisElem.removeClass('anim-trigger');
         }
       });
+
+      if ($(window).scrollTop() > 300) {
+        $('#back-to-top').addClass('show');
+      } else {
+        $('#back-to-top').removeClass('show');
+      }
   }
 
   if (!scrollTimer) {

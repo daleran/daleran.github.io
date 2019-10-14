@@ -37,7 +37,7 @@ header {
     }
   }
 
-  .logo {
+  .logo--header {
     img {
       @include center-block;
       height: auto;
@@ -89,7 +89,7 @@ header {
     }
 
     .title-block {
-      @include center-all;
+      @include absolute-center-all();
       .page-subtitle {
         font-size: 3rem;
       }

@@ -23,9 +23,21 @@
 	clear: both;
 }
 
-@mixin center-all() {
+@mixin absolute-center-all() {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrap($max-width) {
+	margin: auto;
+	max-width: $max-width;
+	
 }

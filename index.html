@@ -38,8 +38,7 @@
     <div class="menu-wrap">
       <div class="menu-sidebar">
         <ul class="menu">
-          <li class="home-nav"><a href="#home">Back to Top ^</a></li>
-          <br>
+          <li><a href="#"><i class="fas fa-lock"></i> Login</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#courses">Courses</a></li>
           <li><a href="#journal">The Journal</a></li>
@@ -48,12 +47,13 @@
           <li><a href="#digital">Word on Fire Digital</a></li>
           <li><a href="#community">What's Included</a></li>
           <li><a href="#faqs">FAQs</a></li>
-          <br>
-          <li><a href="#">Login</a></li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Back to top button -->
+  <a href="#home" id="back-to-top"><br>Back to Top</a>
 
   <!--Header-->
   <header id="home">
@@ -64,7 +64,7 @@
       <a href="#"><i class="fas fa-lock"></i> Login</a>
     </div>
 
-    <div class="logo">
+    <div class="logo--header">
       <img src="img/logos/WOF-Institute-Logo-Icon-Orange.png" alt="Word on Fire Logo">
       <h1 class="page-title">The Word on Fire Institute</h1>
     </div>
@@ -83,15 +83,28 @@
   <main class="main-content">
     <!--About-->
     <section id="about">
-      <div class="wrapper">
-        <h2>&ldquo;I formed the Word on Fire Institute to respond to what I think is the <br><span>greatest challenge of
-            our time...</span>&rdquo;</h2>
-        <figure class="video-box">
-          <iframe
-            src="https://player.vimeo.com/video/291098092?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0"
-            class="video" frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid476367"></iframe>
+
+
+
+      <div class="video__outer">
+        <figure class="video">
+            <h2 class="video__heading">&ldquo;I formed the Word on Fire Institute to respond to what I think is the
+              greatest challenge of our time...&rdquo;
+          </h2>
+          <div class="logo">
+            <div class="logo--watermark">
+              <img class="logo__img" src="img/logos/WOF-Institute-Logo-Icon-Orange.svg" alt="Word on Fire Logo">
+            </div>
+          </div>
+          <div class="video__inner">
+            <iframe class="video__player" title="Bishop Barron Introduction"
+              src="https://player.vimeo.com/video/291098092?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0"
+              frameborder="0" allowfullscreen="" wmode="opaque" id="fitvid476367">
+            </iframe>
+          </div>
         </figure>
       </div>
+
       <p>Take courses in theology, philosophy, evangelization, and culture from <br> Bishop Barron and the Word on Fire
         Institute Fellows <br> <strong>anytime, anywhere</strong>. </p>
       <figure class="devices">
@@ -265,7 +278,7 @@
           <div class="fellow-container">
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -273,7 +286,7 @@
             </article>
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -281,7 +294,7 @@
             </article>
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -289,7 +302,7 @@
             </article>
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -297,7 +310,7 @@
             </article>
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -305,7 +318,7 @@
             </article>
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -313,7 +326,7 @@
             </article>
             <article class="fellow">
               <div class="fellow-line"></div>
-              <figure><img src="img/fellows/fellow-barron.png" alt="Bishop Robert Barron"></figure>
+              <figure><div class="fellow-img"></div></figure>
               <h3>Bishop Robert Barron</h3>
               <p>Cras varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
                 hymenaeos.
@@ -426,13 +439,13 @@
             high-quality Catholic films, conferences, and resources bringing Christ to the culture.</p>
         </div>
         <div class="footer-contact">
-          <p><a href="#"><i class="fas fa-lock"></i> Login</a></p>  
+          <p><a href="#"><i class="fas fa-lock"></i> Login</a></p>
           <p>Got questions? Email us at <strong>help@wordonfire.institute</strong></p>
-          <p><a href="#">WordOnFire.org</a>  |  <a href="#">WordOnFire.Institute</a>  |  <a href="#">Privacy</a>  |  <a href="#">Contact</a></p>
+          <p><a href="#">WordOnFire.org</a> | <a href="#">WordOnFire.Institute</a> | <a href="#">Privacy</a> | <a
+              href="#">Contact</a></p>
           <p>Copyright © 2019 - Word on Fire Catholic Ministries</p>
         </div>
         <a href="#" class="button-bold">Join Now</a>
-        <a href="#home" class="button">Back to Top</a>
       </div>
       <div class="r-margin"></div>
     </div>

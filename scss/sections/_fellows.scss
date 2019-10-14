@@ -60,13 +60,19 @@
 
   figure{
     width: 100%;
+    height: 16rem;
+    width: 16rem;
     margin: 0;
     
-    img{
+    .fellow-img{
       transition: all 0.5s ease-out;
-      width: 70%;
-      height: auto;
-    }    
+      background-image: url('img/fellows/fellow-barron.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+    } 
   }
 
   h3{
@@ -106,9 +112,15 @@
     margin: 0 5%;
     width: 40%;
 
+    figure{
+      height: 12rem;
+      width: 12rem;
+      overflow: hidden; 
+    }
+
     &:hover{
-      img{
-        transform: scale(1.15);
+      .fellow-img{
+        transform: scale(1.2);
       }
 
       h3{
