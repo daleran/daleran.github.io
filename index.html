@@ -38,7 +38,8 @@
     <div class="menu-wrap">
       <div class="menu-sidebar">
         <ul class="menu">
-          <li><a href="#"><i class="fas fa-lock"></i> Login</a></li>
+          <li><a href="#" class="menu__item--lg"><i class="fas fa-user-plus"></i> Join Now</a></li>
+          <li><a href="#" class="menu__item--lg"><i class="fas fa-lock"></i> Login</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#courses">Courses</a></li>
           <li><a href="#journal">The Journal</a></li>
@@ -56,12 +57,12 @@
   <a href="#home" id="back-to-top"><br>Back to Top</a>
 
   <!--Header-->
-  <header id="home">
+  <header id="home" class="header">
     <video poster="img/bg/crowd-bg-still.png" id="bgvid" playsinline autoplay muted loop>
       <source src="img/bg/crowd-bg.mp4" type="video/mp4">
     </video>
-    <div class="login">
-      <a href="#"><i class="fas fa-lock"></i> Login</a>
+    <div class="header__login">
+      <a href="#" class="btn btn--small"><i class="fas fa-lock"></i> Login</a>
     </div>
 
     <div class="logo--header">
@@ -73,8 +74,8 @@
         Learn to Lead the Culture to Christ with <br>
         Beauty, Goodness, and Truth.
       </h2>
-      <a href="#" class="button-bold">Join Now</a>
-      <a href="#about" class="button-ghost">Watch the Video</a>
+      <a href="#" class="btn btn--bold">Join Now</a>
+      <a href="#about" class="btn">Watch the Video</a>
     </div>
 
   </header>
@@ -83,9 +84,6 @@
   <main class="main-content">
     <!--About-->
     <section id="about">
-
-
-
       <div class="video__outer">
         <figure class="video">
             <h2 class="video__heading">&ldquo;I formed the Word on Fire Institute to respond to what I think is the
@@ -108,15 +106,9 @@
       <p>Take courses in theology, philosophy, evangelization, and culture from <br> Bishop Barron and the Word on Fire
         Institute Fellows <br> <strong>anytime, anywhere</strong>. </p>
       <figure class="devices">
-        <div>
-          <img src="img/features/phone.jpg" alt="Phone">
-        </div>
-        <div>
-          <img src="img/features/laptop.jpg" alt="Laptop">
-        </div>
-        <div>
-          <img src="img/features/ipad.jpg" alt="Ipad">
-        </div>
+          <img class="devices__img" src="img/features/laptop.png" alt="Laptop">
+          <img class="devices__img" src="img/features/phone.png" alt="Phone">
+          <img class="devices__img devices__img--tablet" src="img/features/ipad.png" alt="Ipad">
       </figure>
       <a href="#" class="button-bold">Join Now</a>
     </section>
@@ -233,7 +225,7 @@
             <p>daily life from fellow missionaries on the</p>
             <p>journey to know and serve Christ. </p>
             <a href="#" class="button-bold">Join Now</a>
-          </div> c
+          </div>
         </div>
         <div class="r-margin"></div>
       </div>

@@ -1,16 +1,16 @@
-.video{
+.video {
   padding: 1rem;
   background-color: $gray-light;
-  margin:1rem;
+  margin: 1rem;
   position: relative;
 
-  &__inner{
+  &__inner {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
   }
 
-  &__player{
+  &__player {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,7 +19,7 @@
     border: 0;
   }
 
-  &__heading{
+  &__heading {
     position: relative;
     z-index: 1;
     text-align: center;
@@ -32,60 +32,69 @@
   }
 }
 
-.logo{
+.logo {
   @include absolute-center-all();
   top: 20%;
   background-color: white;
   width: 25%;
-  &__img{
+
+  &__img {
     height: auto;
   }
 
-  &--watermark{
+  &--watermark {
     opacity: 0.2;
   }
 }
 
-#about{
+.devices {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  @include wrap($wrapper-size);
 
-  .devices{
-    width: 100%;
-    margin: 1rem 0 1rem 0;
+  &__img {
+    transition: all 0.5s ease-out;
+    height: 35vw;
+    width: auto;
+    margin: 1rem 0;
 
-    div{
-      height: 20rem;
-      width: 100%;
-    }
-
-    img{
-      height: auto;
-      width: 90%;
-      margin: auto;
+    &:hover {
+      transform: scale(1.2);
     }
   }
+}
 
-  p{
+#about {
+  padding: 2rem 0;
+  margin: 0;
+
+  p {
     text-align: center;
     padding: 1rem;
     margin: 1rem;
     @include font-size(1.25);
   }
 
-  .button-bold{
+  .button-bold {
     @include center-block;
   }
 }
 
 @media only screen and (min-width: $small-break) {
-  .video{
+  .video {
     padding: 2rem 2rem 2rem 10rem;
     margin: 2rem 2rem 2rem 10rem;
 
-    &__outer{
+    &__outer {
       @include wrap($wrapper-size);
     }
 
-    &__heading{
+    &__heading {
       position: absolute;
       max-width: 13rem;
       text-align: left;
@@ -97,44 +106,42 @@
     }
   }
 
-  .logo{
+  .logo {
     left: -5%;
     top: 40%;
     background-color: white;
     z-index: 1;
     height: 100%;
     width: auto;
-    &__img{
+
+    &__img {
       height: 100%;
       width: auto;
     }
 
-    &--watermark{
+    &--watermark {
       height: 100%;
       width: auto;
     }
   }
 
-  #about{
-  .devices{
-    div{
-      height: 20rem;
-      width: 100%;
-    }
+  .devices {
+    flex-direction: row;
 
-    img{
-      height: 100%;
+    &__img {
+      height: 22vw;
       width: auto;
-      margin: auto;
+      margin: 0;
+      &--tablet {
+        margin: 0 4vw;
+      }
     }
   }
-}
-
 }
 
 @media only screen and (min-width: $medium-break) {
-  .video{
-    &__heading{
+  .video {
+    &__heading {
       font-size: 1.75rem;
       max-width: 12rem;
       left: -10%;

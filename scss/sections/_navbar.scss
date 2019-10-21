@@ -1,3 +1,6 @@
+
+
+
 nav {
   a {
     text-decoration: none;
@@ -35,7 +38,7 @@ nav {
     margin-left: 0;
   }
   .menu-sidebar {
-    margin: 3rem 0 4rem 10px;
+    margin: 2rem 0 2rem 10px;
     position: relative;
     top: 70px;
     li {
@@ -46,6 +49,10 @@ nav {
       color: #f3f3f3;
       font-size: 1.18em;
       position: relative;
+    }
+
+    .menu__item--lg{
+      font-size: 1.5rem;
     }
 
     li > a::after {

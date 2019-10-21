@@ -3,6 +3,10 @@ html {
   font-family: $font-sans;
 }
 
+main, header{
+  margin: 0;
+}
+
 section{
   background-color: #FFF;
   padding: 1rem 0;
@@ -32,52 +36,5 @@ img {
 
   .r-margin{
     flex: 1 1 auto;
-  }
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: auto;
-}
-
-.col{
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-}
-
-.flex{
-  display: flex;
-}
-
-.hide{
-  display: none;
-}
-
-.col-1 {
-  @extend .col;
-}
-
-.col-3 {
-  @extend .col;
-}
-
-.col-5 {
-  @extend .col;
-}
-
-@media screen and (min-width: $mobile-break){
-  .col-1{
-    flex: 1;
-  }
-
-  .col-3{
-    flex: 3;
-  }
-
-  .col-5{
-    flex: 5;
   }
 }

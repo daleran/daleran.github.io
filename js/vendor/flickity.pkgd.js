@@ -4594,13 +4594,3 @@ $('.fellow-container').flickity({
   adaptiveHeight: true,
 });
 
-$('.devices').flickity({
-  draggable: false,
-  prevNextButtons: false,
-  pageDots: false,
-  wrapAround: true,
-  autoPlay: 3000,
-  imagesLoaded: true,
-  pauseAutoPlayOnHover: false,
-});
-
