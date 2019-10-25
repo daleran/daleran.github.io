@@ -1,132 +1,3 @@
-.btn {
-  $btnAnim: 0.3s;
-
-  position: relative;
-  display: inline-block;
-  width: 10rem;
-  margin: 0.5rem;
-  outline: 0;
-  padding: 1rem;
-  overflow: hidden;
-  background-color: $primary;
-  cursor: pointer;
-  z-index: 1;
-
-  font-family: $font-sans-cond;
-  color: $text-light;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: .1rem;
-  text-align: center;
-
-  &:before {
-    content: "";
-    position: absolute;
-    background-color: $primary-light;
-    bottom: 0;
-    left: 0;
-    right: 100%;
-    top: 0;
-    z-index: -1;
-    transition: right $btnAnim ease-in;
-  }
-
-  &:after {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    content: attr(text);
-    opacity: 1;
-    animation: scrollFadeDown $btnAnim ease-in-out;
-  }
-
-  &:hover,
-  &:active {
-    color: $text-light;
-
-    &:before {
-      right: 0;
-    }
-
-    &:after {
-      animation: scrollFadeUp $btnAnim ease-in-out;
-    }
-  }
-
-  &--small {
-    width: auto;
-    margin: 0.5rem;
-    padding: 0.75rem;
-  }
-
-  &--ghost{
-    color: $text-dark;
-    background-color: $bg-white-half;
-
-    &:before {
-      background-color: $primary;
-    }
-  }
-
-  &--white{
-    color: $text-dark;
-    background-color: #FFF;
-
-    &:before {
-      background-color: $primary;
-    }
-  }
-
-  @keyframes scrollFadeUp {
-    0% {
-      opacity: 1;
-      top: 0;
-    }
-
-    49% {
-      opacity: 0;
-      top: -1rem;
-    }
-
-    50% {
-      opacity: 0;
-      top: 1rem;
-    }
-
-    100% {
-      opacity: 1;
-      top: 0;
-    }
-  }
-
-  @keyframes scrollFadeDown {
-    0% {
-      opacity: 1;
-      top: 0;
-    }
-
-    49% {
-      opacity: 0;
-      top: 1rem;
-    }
-
-    50% {
-      opacity: 0;
-      top: -1rem;
-    }
-
-    100% {
-      opacity: 1;
-      top: 0;
-    }
-  }
-}
-
-
 .button {
   border: 2px solid $primary;
   background-color: #FFF;
@@ -151,26 +22,28 @@
     background-color: $primary-dark;
     border-color: $primary-dark;
   }
-}
 
-.button-ghost {
-  @extend .button;
-  background-color: $bg-white-half;
-}
-
-.button-bold {
-  @extend .button;
-  color: $text-light;
-  background-color: $primary;
-
-  &:hover {
-    background-color: $primary-light;
-    border-color: $primary-light;
+  &--ghost{
+    background-color: $bg-white-half;
   }
 
-  &:active {
-    background-color: $primary-dark;
-    border-color: $primary-dark;
+  &--bold{
+    color: $text-light;
+    background-color: $primary;
+  
+    &:hover {
+      background-color: $primary-light;
+      border-color: $primary-light;
+    }
+  
+    &:active {
+      background-color: $primary-dark;
+      border-color: $primary-dark;
+    }
+  }
+
+  &--small{
+    padding: 0.5rem;
   }
 }
 
@@ -216,17 +89,5 @@
   &.show {
     opacity: 1;
     visibility: visible;
-  }
-
-}
-
-#login{
-  position: fixed;
-  top: 0px;
-  right: 0px;
-
-  @media only screen and (min-width: $small-break) {
-    top: 30px;
-    right: 30px;
   }
 }

@@ -69,18 +69,18 @@
   }
 }
 
-#about {
+.about {
   padding: 2rem 0;
   margin: 0;
 
-  p {
+  &__tagline{
     text-align: center;
     padding: 1rem;
     margin: 1rem;
     @include font-size(1.25);
   }
 
-  .button-bold {
+  &__join{
     @include center-block;
   }
 }

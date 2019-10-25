@@ -19,25 +19,6 @@ header {
     transform: translateX(-50%) translateY(-50%);
   }
 
-
-/*
-  .login{
-    color: $text-light;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: right;
-    padding: 1rem 1rem 0 1rem;
-    text-transform: uppercase;
-    a{
-      text-decoration: none;
-      color: $text-light;
-
-      &:hover{
-        color:$primary;
-      }
-    }
-    */
-
   .logo--header {
     img {
       @include center-block;
@@ -67,10 +48,6 @@ header {
       color: $text-light;
     }
   }
-
-  .button-bold {
-    min-width: 11rem;
-  }
 }
 
 .header{
@@ -89,11 +66,6 @@ header {
 
 @media screen and (min-width: $small-break) {
   header {
-
-    .login{
-      padding: 2rem 2rem 0 2rem;
-    }
-
     .logo {
       margin-bottom: 6rem;
 

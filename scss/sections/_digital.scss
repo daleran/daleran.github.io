@@ -1,8 +1,15 @@
-#digital{
+.digital{
   background-image: url('img/bg/digital-bg.jpg');
   background-size: cover;
   background-position: center;
   color: $text-light;
+
+  &__join{
+    @include center-block;
+  }
+}
+
+#digital{
 
   .heading-line {
     .line-l {
@@ -48,10 +55,6 @@
 
   img.triggered{
     transform: translate(0, -100vh);
-  }
-
-  .button-bold{
-    @include center-block;
   }
 }
 
